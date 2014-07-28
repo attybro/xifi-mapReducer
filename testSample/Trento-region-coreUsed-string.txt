@@ -1,0 +1,16 @@
+2014-07-15T10:39:37.504984|1405435177|Trento|region|coreUsed|string|45
+2014-07-15T10:40:16.985938|1405435216|Trento|region|coreUsed|string|45
+2014-07-15T10:40:59.161092|1405435259|Trento|region|coreUsed|string|45
+2014-07-15T10:41:43.575890|1405435303|Trento|region|coreUsed|string|45
+2014-07-15T10:42:22.522193|1405435342|Trento|region|coreUsed|string|45
+2014-07-15T10:43:04.420103|1405435384|Trento|region|coreUsed|string|45
+2014-07-15T10:43:45.852575|1405435425|Trento|region|coreUsed|string|45
+2014-07-15T10:44:27.753382|1405435467|Trento|region|coreUsed|string|45
+2014-07-15T10:45:11.415275|1405435511|Trento|region|coreUsed|string|45
+2014-07-15T10:45:43.161065|1405435543|Trento|region|coreUsed|string|44
+2014-07-15T10:45:51.795863|1405435551|Trento|region|coreUsed|string|45
+2014-07-15T10:46:32.978466|1405435592|Trento|region|coreUsed|string|45
+2014-07-15T10:47:14.903339|1405435634|Trento|region|coreUsed|string|45
+2014-07-15T10:47:55.950584|1405435675|Trento|region|coreUsed|string|45
+
+

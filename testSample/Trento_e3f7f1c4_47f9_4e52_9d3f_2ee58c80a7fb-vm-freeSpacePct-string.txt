@@ -1,0 +1,2 @@
+2014-07-18T04:37:51.718554|1405672671|Trento_e3f7f1c4_47f9_4e52_9d3f_2ee58c80a7fb|vm|freeSpacePct|string|45
+2014-07-18T04:38:52.698099|1405672732|Trento_e3f7f1c4_47f9_4e52_9d3f_2ee58c80a7fb|vm|freeSpacePct|string|45
