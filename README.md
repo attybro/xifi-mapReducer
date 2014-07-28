@@ -44,4 +44,4 @@ xifi-mapReducer
 
 ##Contact
 
-For any question, bug report, suggestion or feedback in general, please contact me Attilio Broglio (abroglio at create-net dot org).
+For any question, bug report, suggestion or feedback in general, please contact me: Attilio Broglio (abroglio at create-net dot org).
