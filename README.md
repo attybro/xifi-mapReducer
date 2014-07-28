@@ -12,7 +12,7 @@ xifi-mapReducer
     * mapperVM.py
     * reduucerVM.py
 
-###The final Tables schema will be:
+###The final Table schemas will be:
 * Table region:
 
 |entityId\* |entityType |aggregationType|timestampId\*|avg_ram_used|avg_ram_tot|avg_core_enabled|avg_core_used|avg_core_tot|avg_hd_used|avg_hd_tot|avg_vm_tot|
