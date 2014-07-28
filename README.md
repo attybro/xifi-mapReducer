@@ -1,6 +1,6 @@
 xifi-mapReducer
 ===============
-
+##General Information
 ###This repo is composed by 3 pairs of scripts:
 1. Region (entity) map/reduce scripts:
     * mapperRegion.py
@@ -40,3 +40,8 @@ xifi-mapReducer
 
 
 *with primary keys (entityId, region, entityType,serviceType,timestampId )*
+
+
+##Contact
+
+For any question, bug report, suggestion or feedback in general, please contact me Attilio Broglio (abroglio at create-net dot org).
