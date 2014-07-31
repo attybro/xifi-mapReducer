@@ -14,9 +14,9 @@ entityId        =None
 myList=[]
 
 ##This is the referece time
-#sysTimestamp=time.time();
-sysTimestamp=1405672700
-sysTimestampDelta=sysTimestamp-300;
+sysTimestamp=time.time();
+#sysTimestamp=1405672700
+sysTimestampDelta=sysTimestamp-3600;
 sysDate=datetime.datetime.fromtimestamp(sysTimestampDelta)
 sysDateClean=datetime.datetime(sysDate.year, sysDate.month, sysDate.day,0,0,0)
 sysMin=time.mktime(sysDateClean.timetuple())
