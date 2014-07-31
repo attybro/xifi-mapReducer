@@ -81,7 +81,6 @@ for line in sys.stdin:
         continue;
       else:
 	probe[entityId]=base;
-	print(hour)
         probe[entityId][hour][agg_name]+=count
         probe[entityId][hour]['C'+agg_name]+=1
 
