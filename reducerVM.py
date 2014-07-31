@@ -25,30 +25,30 @@ sysMax=sysMin+(24*60*60)
 # input comes from STDIN
 for line in sys.stdin:
   base={
-  '0': {'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '1': {'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '2': {'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '3': {'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '4': {'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '5': {'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '6': {'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '7': {'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '8': {'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '9': {'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '10':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '11':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '12':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '13':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '14':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '15':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '16':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '17':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '18':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '19':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '20':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '21':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '22':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0},
-  '23':{'usedMemPct':0, 'CusedMemPct':0, 'freeSpacePct':0, 'CfreeSpacePct':0, 'cpuLoadPct':0, 'CcpuLoadPct':0}
+  '0': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '1': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '2': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '3': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '4': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '5': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '6': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '7': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '8': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '9': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '10':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '11':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '12':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '13':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '14':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '15':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '16':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '17':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '18':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '19':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '20':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '21':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '22':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0},
+  '23':{'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0}
   }
   ipAddress = None;
   System_uptime=None;
@@ -61,11 +61,11 @@ for line in sys.stdin:
 
   if (float(timeInterval)>=sysMin and float(timeInterval)<sysMax):
     try:
-      count=int(count)
+      count=float(count)
     except ValueError:
       count=str(count)
     if (probe.get(entityId)):
-      tmpDate=datetime.datetime.fromtimestamp(sysTimestampDelta)
+      tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
       hour=str(tmpDate.hour)
       if (agg_name=='usedMemPct' or agg_name=='freeSpacePct' or agg_name=='cpuLoadPct'):
         probe[entityId][hour][agg_name]+=count
@@ -74,10 +74,10 @@ for line in sys.stdin:
         continue;
     else:
       probe[entityId]=base;
-      tmpDate=datetime.datetime.fromtimestamp(sysTimestampDelta)
+      tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
       hour=str(tmpDate.hour)
       if (agg_name=='usedMemPct' or agg_name=='freeSpacePct' or agg_name=='cpuLoadPct'):
-        probe[entityId][hour][agg_name]+=count
+        probe[entityId][hour][agg_name]+=float(count)
         probe[entityId][hour]['C'+agg_name]+=1
       else:
         continue;
