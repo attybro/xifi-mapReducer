@@ -67,7 +67,7 @@ for line in sys.stdin:
     except ValueError:
       count=str(count)
     if (probe.get(entityId)):
-      tmpDate=datetime.datetime.fromtimestamp(sysTimestampDelta)
+      tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
       hour=str(tmpDate.hour)
       if (agg_name=='location' or agg_name=='latitude' or agg_name=='longitude' or agg_name=='timeSample' or agg_name=='_timestamp' or agg_name=='vmImage' or  agg_name=='vmList'):
         continue;
@@ -75,12 +75,13 @@ for line in sys.stdin:
         probe[entityId][hour][agg_name]+=count
         probe[entityId][hour]['C'+agg_name]+=1
     else:
-      probe[entityId]=base;
-      tmpDate=datetime.datetime.fromtimestamp(sysTimestampDelta)
+      tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
       hour=str(tmpDate.hour)
       if (agg_name=='location' or agg_name=='latitude' or agg_name=='longitude' or agg_name=='timeSample' or agg_name=='_timestamp' or agg_name=='vmImage' or  agg_name=='vmList'):
         continue;
       else:
+	probe[entityId]=base;
+	print(hour)
         probe[entityId][hour][agg_name]+=count
         probe[entityId][hour]['C'+agg_name]+=1
 
