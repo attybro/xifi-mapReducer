@@ -1,0 +1,2 @@
+2014-08-05T17:05:51.907365|1407251151|Trento_node_2_nova_scheduler|host_service|nova_scheduler|string|1
+2014-08-05T17:10:47.128219|1407251447|Trento_node_2_nova_scheduler|host_service|nova_scheduler|string|1

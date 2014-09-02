@@ -15,14 +15,10 @@ myList=[]
 
 ##This is the referece time
 sysTimestamp=time.time();
-#sysTimestamp=1405435000
-sysTimestampDelta=sysTimestamp-3600;
-sysDate=datetime.datetime.fromtimestamp(sysTimestampDelta)
-sysDateClean=datetime.datetime(sysDate.year, sysDate.month, sysDate.day,0,0,0)
+actualSample=datetime.date.fromordinal(datetime.date.today().toordinal()-1)
+sysDateClean=datetime.datetime(actualSample.year, actualSample.month, actualSample.day,0,0,0)
 sysMin=time.mktime(sysDateClean.timetuple())
 sysMax=sysMin+(24*60*60)
-
-
 
 # input comes from STDIN
 for line in sys.stdin:
@@ -61,28 +57,28 @@ for line in sys.stdin:
   block, timeInterval = line.split('\t')
   entityId, entityType, agg_name, agg_type, count = block.split('|')
 
-  if (float(timeInterval)>=sysMin and float(timeInterval)<sysMax):
-    try:
-      count=int(count)
-    except ValueError:
-      count=str(count)
-    if (probe.get(entityId)):
-      tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
-      hour=str(tmpDate.hour)
-      if (agg_name=='location' or agg_name=='latitude' or agg_name=='longitude' or agg_name=='timeSample' or agg_name=='_timestamp' or agg_name=='vmImage' or  agg_name=='vmList'):
-        continue;
-      else:
-        probe[entityId][hour][agg_name]+=count
-        probe[entityId][hour]['C'+agg_name]+=1
+  #if (float(timeInterval)>=sysMin and float(timeInterval)<sysMax):
+  try:
+    count=int(count)
+  except ValueError:
+    count=str(count)
+  if (probe.get(entityId)):
+    tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
+    hour=str(tmpDate.hour)
+    if (agg_name=='location' or agg_name=='latitude' or agg_name=='longitude' or agg_name=='timeSample' or agg_name=='_timestamp' or agg_name=='vmImage' or  agg_name=='vmList'):
+      continue;
     else:
-      tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
-      hour=str(tmpDate.hour)
-      if (agg_name=='location' or agg_name=='latitude' or agg_name=='longitude' or agg_name=='timeSample' or agg_name=='_timestamp' or agg_name=='vmImage' or  agg_name=='vmList'):
-        continue;
-      else:
-	probe[entityId]=base;
-        probe[entityId][hour][agg_name]+=count
-        probe[entityId][hour]['C'+agg_name]+=1
+      probe[entityId][hour][agg_name]+=count
+      probe[entityId][hour]['C'+agg_name]+=1
+  else:
+    tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
+    hour=str(tmpDate.hour)
+    if (agg_name=='location' or agg_name=='latitude' or agg_name=='longitude' or agg_name=='timeSample' or agg_name=='_timestamp' or agg_name=='vmImage' or  agg_name=='vmList'):
+      continue;
+    else:
+      probe[entityId]=base;
+      probe[entityId][hour][agg_name]+=count
+      probe[entityId][hour]['C'+agg_name]+=1
 
 
 

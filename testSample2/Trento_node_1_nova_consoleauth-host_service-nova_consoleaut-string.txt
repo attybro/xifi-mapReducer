@@ -1,0 +1,2 @@
+2014-08-05T17:05:50.052096|1407251150|Trento_node_1_nova_consoleauth|host_service|nova_consoleaut|string|0
+2014-08-05T17:10:45.423911|1407251445|Trento_node_1_nova_consoleauth|host_service|nova_consoleaut|string|0

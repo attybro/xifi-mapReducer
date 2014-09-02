@@ -15,12 +15,11 @@ myList=[]
 
 ##This is the referece time
 sysTimestamp=time.time();
-#sysTimestamp=1405672700
-sysTimestampDelta=sysTimestamp-3600;
-sysDate=datetime.datetime.fromtimestamp(sysTimestampDelta)
-sysDateClean=datetime.datetime(sysDate.year, sysDate.month, sysDate.day,0,0,0)
+actualSample=datetime.date.fromordinal(datetime.date.today().toordinal()-1)
+sysDateClean=datetime.datetime(actualSample.year, actualSample.month, actualSample.day,0,0,0)
 sysMin=time.mktime(sysDateClean.timetuple())
 sysMax=sysMin+(24*60*60)
+
 
 # input comes from STDIN
 for line in sys.stdin:
@@ -59,28 +58,28 @@ for line in sys.stdin:
   block, timeInterval = line.split('\t')
   entityId, entityType, agg_name, agg_type, count = block.split('|')
 
-  if (float(timeInterval)>=sysMin and float(timeInterval)<sysMax):
-    try:
-      count=float(count)
-    except ValueError:
-      count=str(count)
-    if (probe.get(entityId)):
-      tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
-      hour=str(tmpDate.hour)
-      if (agg_name=='usedMemPct' or agg_name=='freeSpacePct' or agg_name=='cpuLoadPct'):
-        probe[entityId][hour][agg_name]+=count
-        probe[entityId][hour]['C'+agg_name]+=1
-      else:
-        continue;
+  #if (float(timeInterval)>=sysMin and float(timeInterval)<sysMax):
+  try:
+    count=float(count)
+  except ValueError:
+    count=str(count)
+  if (probe.get(entityId)):
+    tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
+    hour=str(tmpDate.hour)
+    if (agg_name=='usedMemPct' or agg_name=='freeSpacePct' or agg_name=='cpuLoadPct'):
+      probe[entityId][hour][agg_name]+=count
+      probe[entityId][hour]['C'+agg_name]+=1
     else:
-      probe[entityId]=base;
-      tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
-      hour=str(tmpDate.hour)
-      if (agg_name=='usedMemPct' or agg_name=='freeSpacePct' or agg_name=='cpuLoadPct'):
-        probe[entityId][hour][agg_name]+=float(count)
-        probe[entityId][hour]['C'+agg_name]+=1
-      else:
-        continue;
+      continue;
+  else:
+    probe[entityId]=base;
+    tmpDate=datetime.datetime.fromtimestamp(float(timeInterval))
+    hour=str(tmpDate.hour)
+    if (agg_name=='usedMemPct' or agg_name=='freeSpacePct' or agg_name=='cpuLoadPct'):
+      probe[entityId][hour][agg_name]+=float(count)
+      probe[entityId][hour]['C'+agg_name]+=1
+    else:
+      continue;
 
 
 for probeId in probe:
