@@ -1,7 +1,7 @@
 xifi-mapReducer
 ===============
 ##General Information
-###This repo is composed by 3 pairs of scripts:
+###This repo is composed by 4 pairs of scripts:
 1. Region (entity) map/reduce scripts:
     * mapperRegion.py
     * reducerRegion.py
@@ -10,7 +10,10 @@ xifi-mapReducer
     * reducerHS.py
 3. VM (entity) srcipts:
     * mapperVM.py
-    * reduucerVM.py
+    * reducerVM.py
+4. Host scripts
+    * mapperH.py
+    * reducerH.py
 
 ###The final Table schemas will be:
 * Table region:
@@ -24,9 +27,9 @@ xifi-mapReducer
 
 * Table vm:
 
-|entityId\* |region\*   |entityType     |aggregationType|timestampId\*|avg_usedMemPct |avg_freeSpacePct|avg_cpuLoadPct|
-|-----------|-----------|---------------|---------------|-------------|---------------|----------------|--------------|
-|varchar(64)|varchar(16)|varchar(16)    |varchar(8)    |timestamp    |float          |float           |float         |
+|entityId\* |region\*   |entityType     |aggregationType|timestampId\*|avg_usedMemPct |avg_freeSpacePct|avg_cpuLoadPct|availability|
+|-----------|-----------|---------------|---------------|-------------|---------------|----------------|--------------|------------|
+|varchar(64)|varchar(16)|varchar(16)    |varchar(8)    |timestamp    |float          |float           |float          |float       |
 
 
 *with primary keys  (entityId, region, timestampId)*
@@ -40,6 +43,17 @@ xifi-mapReducer
 
 
 *with primary keys (entityId, region, entityType,serviceType,timestampId )*
+
+
+* Table host:
+
+|entityId\* |region\*   |hostname   |entityType     |aggregationType|timestampId\*|avg_usedMemPct |avg_freeSpacePct|avg_cpuLoadPct|availability|
+|-----------|-----------|-----------|---------------|---------------|-------------|---------------|----------------|--------------|------------|
+|varchar(64)|varchar(16)|varchar(16)|varchar(16)    |varchar(8)     |timestamp    |float          |float           |float         |float       |
+
+
+*with primary keys  (entityId, region, timestampId)*
+
 
 
 ##Contact
