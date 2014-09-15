@@ -91,5 +91,5 @@ for probeId in probe:
 
     av_CL=0 if probe.get(probeId).get(timeId).get('CcpuLoadPct')== 0  else float(probe.get(probeId).get(timeId).get('cpuLoadPct'))/float(probe.get(probeId).get(timeId).get('CcpuLoadPct'))
 
-    print '%s\t%s\tvm\th\t%s\t%s\t%s\t%s'% (probeId, (probeId.split('_'))[0], datetime.datetime.fromtimestamp(float(sysMin)+float(timeId)*3600), str(av_UM), str(av_FS), str(av_CL))
+    print '%s\t%s\tvm\th\t%s\t%s\t%s\t%s\t%s'% (probeId, (probeId.split('_'))[0], datetime.datetime.fromtimestamp(float(sysMin)+float(timeId)*3600), str(av_UM), str(av_FS), str(av_CL), str(probe.get(probeId).get(timeId).get('CcpuLoadPct')))
 
