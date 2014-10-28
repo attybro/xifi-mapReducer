@@ -24,7 +24,7 @@ sysMax=sysMin+(24*60*60)
 # input comes from STDIN
 for line in sys.stdin:
   base={
-  '0': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0,'hostname':'none','Chostname':0.0}, 
+  '0': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0,'hostname':'none','Chostname':0.0},
   '1': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0,'hostname':'none','Chostname':0.0},
   '2': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0,'hostname':'none','Chostname':0.0},
   '3': {'usedMemPct':0.0, 'CusedMemPct':0.0, 'freeSpacePct':0.0, 'CfreeSpacePct':0.0, 'cpuLoadPct':0.0, 'CcpuLoadPct':0.0,'hostname':'none','Chostname':0.0},
@@ -100,5 +100,6 @@ for probeId in probe:
 
     av_CL=0 if probe.get(probeId).get(timeId).get('CcpuLoadPct')== 0  else float(probe.get(probeId).get(timeId).get('cpuLoadPct'))/float(probe.get(probeId).get(timeId).get('CcpuLoadPct'))
 
-    print '%s\t%s\t%s\thost\th\t%s\t%s\t%s\t%s\t%s'% (probeId, (probeId.split('_'))[0], hostId, datetime.datetime.fromtimestamp(float(sysMin)+float(timeId)*3600), str(av_UM), str(av_FS), str(av_CL), probe.get(probeId).get(timeId).get('Chostname'))
+    print '%s\t%s\t%s\thost_controller\th\t%s\t%s\t%s\t%s\t%s'% (probeId, (probeId.split('_'))[0], hostId, datetime.datetime.fromtimestamp(float(sysMin)+float(timeId)*3600), str(av_UM), str(av_FS), str(av_CL), probe.get(probeId).get(timeId).get('Chostname'))
 
+    
