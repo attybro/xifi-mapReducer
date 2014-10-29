@@ -1,7 +1,7 @@
 xifi-mapReducer
 ===============
 ##General Information
-###This repo is composed by 4 pairs of scripts:
+###This repo is composed by 5 pairs of scripts:
 1. Region (entity) map/reduce scripts:
     * mapperRegion.py
     * reducerRegion.py
@@ -11,9 +11,12 @@ xifi-mapReducer
 3. VM (entity) srcipts:
     * mapperVM.py
     * reducerVM.py
-4. Host scripts
-    * mapperH.py
-    * reducerH.py
+4. Host_controller script
+    * mapperHCT.py
+    * reducerHCT.py
+5. Host_compute script
+    * mapperHCP.py
+    * reducerHCP.py
 
 ###The final Table schemas will be:
 * Table region:
