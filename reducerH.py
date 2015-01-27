@@ -57,7 +57,11 @@ for line in sys.stdin:
   #entityType, agg_name, agg_type, count, timeInterval = block.split('|')
   block, timeInterval = line.split('\t')
   entityId, entityType, agg_name, agg_type, count = block.split('|')
-
+  if (entityType=="host_compute"):
+    entityType="compute"
+  if (entityType=="host_controller"):
+    entityType="controller"
+  entityId=entityId+".:."+entityType
   #if (float(timeInterval)>=sysMin and float(timeInterval)<sysMax):
   try:
     count=float(count)
@@ -91,7 +95,10 @@ for line in sys.stdin:
 
 
 for probeId in probe:
+  cleanId=probeId.split('.:.')[0]
+  cleanType=probeId.split('.:.')[1]
   for timeId in probe.get(probeId):
+    sysUP=0.0
     hostId=probe.get(probeId).get(timeId).get('hostname')
     #'Test' if 1 == 1 else 'NoTest
     av_UM= 0 if probe.get(probeId).get(timeId).get('CusedMemPct')== 0  else (float(probe.get(probeId).get(timeId).get('usedMemPct'))/float(probe.get(probeId).get(timeId).get('CusedMemPct')))
@@ -99,7 +106,15 @@ for probeId in probe:
     av_FS=0 if probe.get(probeId).get(timeId).get('CfreeSpacePct')== 0  else float(probe.get(probeId).get(timeId).get('freeSpacePct'))/float(probe.get(probeId).get(timeId).get('CfreeSpacePct'))
 
     av_CL=0 if probe.get(probeId).get(timeId).get('CcpuLoadPct')== 0  else float(probe.get(probeId).get(timeId).get('cpuLoadPct'))/float(probe.get(probeId).get(timeId).get('CcpuLoadPct'))
+    if (probe.get(probeId).get(timeId).get('Chostname')== 0):
+      sysUP=0.0;
+    else:
+      sysUP=probe.get(probeId).get(timeId).get('Chostname')/54
+      if (sysUP>1):
+        sysUP=1;
 
-    print '%s\t%s\t%s\thost_controller\th\t%s\t%s\t%s\t%s\t%s'% (probeId, (probeId.split('_'))[0], hostId, datetime.datetime.fromtimestamp(float(sysMin)+float(timeId)*3600), str(av_UM), str(av_FS), str(av_CL), probe.get(probeId).get(timeId).get('Chostname'))
+
+
+    print '%s\t%s\t%s\t%s\th\t%s\t%s\t%s\t%s\t%s\t%s'% (cleanId, (cleanId.split('_'))[0], (cleanId.split('_'))[1] ,cleanType,datetime.datetime.fromtimestamp(float(sysMin)+float(timeId)*3600), str(av_UM), str(av_FS), str(av_CL), hostId, str(sysUP) );
 
     
