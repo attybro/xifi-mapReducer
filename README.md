@@ -48,9 +48,9 @@ xifi-mapReducer
 
 * Table host:
 
-|entityId\* |region\*   |hostname   |role     |aggregationType|timestampId\*|avg_usedMemPct |avg_freeSpacePct|avg_cpuLoadPct|host_id|sysUptime|
-|-----------|-----------|-----------|---------------|---------------|-------------|---------------|----------------|--------------|------------|
-|varchar(64)|varchar(16)|varchar(16)|varchar(16)    |varchar(8)     |timestamp    |float          |float           |float         |host_id    |float       |
+|entityId\* |region\*   |hostname   |role     |aggregationType|timestampId\*|avg_usedMemPct |avg_freeSpacePct |avg_cpuLoadPct |host_id  |sysUptime  |
+|-----------|-----------|-----------|-----------|----------------|---------------|-------------|---------------|----------------|--------------|------------|
+|varchar(64)|varchar(16)|varchar(16)|varchar(16)    |varchar(8)     |timestamp    |float          |float           |float         |varchar(16)    |float       |
 
 
 *with primary keys  (entityId, region, timestampId)*
