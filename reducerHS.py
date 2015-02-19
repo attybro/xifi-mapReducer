@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 from operator import itemgetter
 import sys
 import time
