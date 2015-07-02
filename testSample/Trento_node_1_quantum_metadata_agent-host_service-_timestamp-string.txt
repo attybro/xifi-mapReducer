@@ -1,7 +1,0 @@
-2014-07-21T04:34:47.154593|1405931687|Trento_node_1_quantum_metadata_agent|host_service|_timestamp|string|1405930849
-2014-07-21T04:35:48.947321|1405931748|Trento_node_1_quantum_metadata_agent|host_service|_timestamp|string|1405930910
-2014-07-21T04:36:48.534510|1405931808|Trento_node_1_quantum_metadata_agent|host_service|_timestamp|string|1405930971
-2014-07-21T04:37:48.200615|1405931868|Trento_node_1_quantum_metadata_agent|host_service|_timestamp|string|1405931031
-2014-07-21T04:38:49.669317|1405931929|Trento_node_1_quantum_metadata_agent|host_service|_timestamp|string|1405931091
-2014-07-21T04:39:49.464134|1405931989|Trento_node_1_quantum_metadata_agent|host_service|_timestamp|string|1405931152
-

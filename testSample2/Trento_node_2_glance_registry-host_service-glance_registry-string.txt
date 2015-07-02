@@ -1,2 +1,0 @@
-2014-08-05T17:05:41.999811|1407251141|Trento_node_2_glance_registry|host_service|glance_registry|string|1
-2014-08-05T17:10:39.396126|1407251439|Trento_node_2_glance_registry|host_service|glance_registry|string|1

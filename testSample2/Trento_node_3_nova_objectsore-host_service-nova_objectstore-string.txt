@@ -1,2 +1,0 @@
-2014-08-05T17:05:49.324664|1407251149|Trento_node_3_nova_objectsore|host_service|nova_objectstore|string|1
-2014-08-05T17:10:44.742223|1407251444|Trento_node_3_nova_objectsore|host_service|nova_objectstore|string|1

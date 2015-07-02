@@ -1,2 +1,0 @@
-2014-08-05T17:05:55.089084|1407251155|Trento_node_2_quantum_server|host_service|quantum_server|string|1
-2014-08-05T17:10:50.398964|1407251450|Trento_node_2_quantum_server|host_service|quantum_server|string|1

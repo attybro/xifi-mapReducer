@@ -1,2 +1,0 @@
-2014-08-05T17:05:44.509118|1407251144|Trento_node_3_nova_cert|host_service|nova_cert|string|1
-2014-08-05T17:10:41.227470|1407251441|Trento_node_3_nova_cert|host_service|nova_cert|string|1

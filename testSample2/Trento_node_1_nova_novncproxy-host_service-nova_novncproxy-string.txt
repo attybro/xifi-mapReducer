@@ -1,2 +1,0 @@
-2014-08-05T17:05:50.734346|1407251150|Trento_node_1_nova_novncproxy|host_service|nova_novncproxy|string|0
-2014-08-05T17:10:46.264241|1407251446|Trento_node_1_nova_novncproxy|host_service|nova_novncproxy|string|0

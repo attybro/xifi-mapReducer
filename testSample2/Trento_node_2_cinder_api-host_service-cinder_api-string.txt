@@ -1,2 +1,0 @@
-2014-08-05T17:05:40.083733|1407251140|Trento_node_2_cinder_api|host_service|cinder_api|string|1
-2014-08-05T17:10:38.610550|1407251438|Trento_node_2_cinder_api|host_service|cinder_api|string|1

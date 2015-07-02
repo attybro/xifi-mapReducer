@@ -1,2 +1,0 @@
-2014-08-05T17:05:56.730123|1407251156|Trento_node_3_quantum_openvswitch_agent|host_service|quantum_openvswitch_agent|string|1
-2014-08-05T17:10:51.978639|1407251451|Trento_node_3_quantum_openvswitch_agent|host_service|quantum_openvswitch_agent|string|1

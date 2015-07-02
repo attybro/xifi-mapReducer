@@ -9,7 +9,7 @@ for line in sys.stdin:
     # increase counters
     for word in words:
         a1,a2, a3,a4, a5, a6, a7= word.split('|')
-        if (a4=="region" and ( a5!="_timestamp" and a5!="vm_used")):
+        if (a4=="region" and ( a5!="_timestamp" and a5!="vm_used" and a5.find("sanity")==-1 )):
           sampleTime=datetime.datetime.fromtimestamp(int(a2)).strftime('%H')
           print '%s|%s|%s|%s|%s\t%s' % (a3, a4, a5, a6, a7, a2)
         else:

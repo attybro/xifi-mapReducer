@@ -1,2 +1,0 @@
-2014-08-05T17:05:38.903307|1407251138|Trento_node_3_cinder_scheduler|host_service|cinder_schedule|string|1
-2014-08-05T17:10:38.033241|1407251438|Trento_node_3_cinder_scheduler|host_service|cinder_schedule|string|1

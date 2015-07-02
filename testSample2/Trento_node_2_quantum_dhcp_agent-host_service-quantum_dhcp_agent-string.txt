@@ -1,2 +1,0 @@
-2014-08-05T17:05:46.982930|1407251146|Trento_node_2_quantum_dhcp_agent|host_service|quantum_dhcp_agent|string|0
-2014-08-05T17:10:42.901909|1407251442|Trento_node_2_quantum_dhcp_agent|host_service|quantum_dhcp_agent|string|0

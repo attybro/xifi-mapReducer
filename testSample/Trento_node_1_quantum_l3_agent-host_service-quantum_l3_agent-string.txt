@@ -1,4 +1,0 @@
-2014-07-21T04:30:36.389400|1405931436|Trento_node_1_quantum_l3_agent|host_service|quantum_l3_agent|string|1
-2014-07-21T04:31:41.341567|1405931501|Trento_node_1_quantum_l3_agent|host_service|quantum_l3_agent|string|0
-2014-07-21T04:32:41.574481|1405931561|Trento_node_1_quantum_l3_agent|host_service|quantum_l3_agent|string|0
-2014-07-21T04:33:42.205840|1405931622|Trento_node_1_quantum_l3_agent|host_service|quantum_l3_agent|string|1

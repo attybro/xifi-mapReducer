@@ -1,2 +1,0 @@
-2014-08-05T17:05:42.499727|1407251142|Trento_node_3_glance_api|host_service|glance_api|string|1
-2014-08-05T17:10:39.707490|1407251439|Trento_node_3_glance_api|host_service|glance_api|string|1

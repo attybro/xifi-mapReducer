@@ -1,2 +1,0 @@
-2014-08-05T17:05:44.956156|1407251144|Trento_node_2_nova_api|host_service|nova_api|string|1
-2014-08-05T17:10:41.579376|1407251441|Trento_node_2_nova_api|host_service|nova_api|string|1
